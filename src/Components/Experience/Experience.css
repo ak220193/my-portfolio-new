@@ -40,6 +40,10 @@
     color: var(--color-primary);
 }
 
+.experience__detail-icon img {
+    width: 10%;
+    height: auto;
+}
 
 @media screen and (maxwidth : 1024px) {
     .experience__container{
