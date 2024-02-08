@@ -18,6 +18,8 @@ const Portfolio = () => {
            
           </div>
           <h3> This is the Title </h3>
+          <div className="portfolio__item-cta">
+          
           <a href="https://github.com" className="btn">Github</a>
           <a
             href="https://local.host.com"
@@ -26,6 +28,7 @@ const Portfolio = () => {
           >
             Live Demo
           </a>
+          </div>
         </article>
       </div>
     </section>
