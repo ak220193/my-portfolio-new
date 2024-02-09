@@ -8,7 +8,7 @@ import Bistro from "../../Assets/spic.jpeg"
 import Movie from "../../Assets/Tmdb.png";
 import Lawfrimland from "../../Assets/Lawfrim.png";
 
-
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
 
 
@@ -22,6 +22,7 @@ const data = [
     title: 'Qtrip Travel Website- static version',
     github:"https://github.com",
     demo: "https://qtriptest1.netlify.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
 
   {
@@ -30,6 +31,7 @@ const data = [
     title: ' Qtrip Travel Website - dynamic version',
     github:"https://github.com",
     demo: "https://qtrip-dyamic-frontend1.netlify.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
 
   {
@@ -38,6 +40,7 @@ const data = [
     title: 'Xboard- NewsFeed',
     github:"https://github.com",
     demo: "https://crionewsfeedsite.netlify.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
 
   {
@@ -46,6 +49,7 @@ const data = [
     title: 'Qkart-Ecommerce',
     github:"https://github.com",
     demo: "https://akash-qkart-frontend-main.vercel.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
 
   {
@@ -54,6 +58,7 @@ const data = [
     title: 'Music-app concept',
     github:"https://github.com",
     demo: "https://qtify-crio-six.vercel.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
 
   {
@@ -62,6 +67,7 @@ const data = [
     title: 'Spice-Bistro : Food delivery',
     github:"https://github.com",
     demo: "https://spice-bistro-ak-react-project.netlify.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
 
   {
@@ -70,6 +76,7 @@ const data = [
     title: 'Movie Review-app',
     github:"https://github.com",
     demo: "https://sample-movie-watch.netlify.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
   {
     id:8,
@@ -77,6 +84,7 @@ const data = [
     title: 'Lawfirm website',
     github:"https://github.com",
     demo: "https://lawfirm-landingpage.vercel.app/",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
 
 ]
@@ -89,13 +97,17 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map (({id, image, title,github,demo }) => {
+          data.map (({id, image, title,github,demo,description }) => {
             return (
           <article  key={id} className="portfolio__item">
           <div className="portfolio__item-image">
           <img src={image} alt={title} />  
           </div>
+          <div className="details">
           <h3> {title} </h3>
+          <p> {description}</p>
+          </div>
+         
           <div className="portfolio__item-cta">
           <a href={github} className="btn">Github</a>
           <a
