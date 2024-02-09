@@ -7,6 +7,19 @@ import User4 from "../../Assets/image4.jpg";
 
 
 
+// swiper import modules 
+
+// import Swiper core and required modules
+import {  Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+
+
 const data = [
   {
     image: User1,
@@ -36,21 +49,30 @@ const Testimonial = () => {
       <h5> Review from Clients </h5>
       <h2> Testimonials </h2>
 
-      <div className="container testomonials__container">
+      <Swiper
+      modules={[ Pagination]}
+      spaceBetween={40}
+      slidesPerView={1}
+      pagination={{ clickable: false }}
+      autoplay={{ delay: 20 }}
+      loop={true} 
+    
+      
+      className="container testomonials__container">
       {
         data.map(({ image, name, review }) => {
           return (
-            <article className="testimonial">
+            <SwiperSlide className="testimonial">
               <div className="client__avatar">
                 <img src={image} alt={name} />
               </div>
               <h5 className="client-name">{name}</h5>
               <p className="client-review">{review}</p>
-            </article>
+            </SwiperSlide>
           );
         })
       }
-      </div>
+      </Swiper>
     </section>
   );
 };
