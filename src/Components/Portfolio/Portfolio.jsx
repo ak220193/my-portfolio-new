@@ -83,10 +83,9 @@ const data = [
     image: Lawfrimland,
     title: 'Lawfirm website',
     github:"https://github.com",
-    demo: "https://lawfirm-landingpage.vercel.app/",
+    demo: "https://lawfirm-landingpage.vercel.app",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
-
 ]
 
 const Portfolio = () => {
