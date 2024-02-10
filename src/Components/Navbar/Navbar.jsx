@@ -34,13 +34,7 @@ const Navbar = () => {
       >
         <BiBook />{" "}
       </a>
-      <a
-        href="#Portfolio"
-        onClick={() => setActiveNav("#Portfolio")}
-        className={activeNav === "About" ? "active" : ""}
-      >
-        <CgWebsite />
-      </a>
+     
       <a
         href="#Services"
         onClick={() => setActiveNav("#Services")}
@@ -48,6 +42,13 @@ const Navbar = () => {
       >
         <RiServiceLine />{" "}
       </a>
+      <a
+      href="#Portfolio"
+      onClick={() => setActiveNav("#Portfolio")}
+      className={activeNav === "About" ? "active" : ""}
+    >
+      <CgWebsite />
+    </a>
       <a
         href="#Contact"
         onClick={() => setActiveNav("#Contact")}
