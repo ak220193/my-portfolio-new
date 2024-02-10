@@ -4,8 +4,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
-
-
+    margin-bottom: 10rem;
 }
 
 footer a {
@@ -53,6 +52,14 @@ footer a {
 .footer__copyright {
     margin-bottom: 4rem;
     color: var(--color-bg);
+}
+
+@media screen and (max-width:1024px) {
+    Footer{
+        margin-bottom: 10rem;
+        width: 80%;
+    }
+    
 }
 
 @media screen and (max-width:600px) {

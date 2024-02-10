@@ -17,7 +17,7 @@ const data = [
     id: 1,
     image: Qtrip,
     title: "Qtrip Travel Website- static version",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://qtriptest1.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
@@ -26,7 +26,7 @@ const data = [
     id: 2,
     image: Qtrip,
     title: " Qtrip Travel Website - dynamic version",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://qtrip-dyamic-frontend1.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
@@ -35,7 +35,7 @@ const data = [
     id: 3,
     image: Xboard,
     title: "Xboard- NewsFeed",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://crionewsfeedsite.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
@@ -44,7 +44,7 @@ const data = [
     id: 4,
     image: Qkart,
     title: "Qkart-Ecommerce",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://akash-qkart-frontend-main.vercel.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
@@ -53,7 +53,7 @@ const data = [
     id: 5,
     image: Qtify,
     title: "Music-app concept",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://qtify-crio-six.vercel.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
@@ -62,7 +62,7 @@ const data = [
     id: 6,
     image: Bistro,
     title: "Spice-Bistro : Food delivery",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://spice-bistro-ak-react-project.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
@@ -71,7 +71,7 @@ const data = [
     id: 7,
     image: Movie,
     title: "Movie Review-app",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://sample-movie-watch.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
@@ -79,7 +79,7 @@ const data = [
     id: 8,
     image: Lawfrimland,
     title: "Lawfirm website",
-    github: "https://github.com",
+    github: "https://github.com/ak220193",
     demo: "https://lawfirm-landingpage.vercel.app",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   }
@@ -104,12 +104,12 @@ const Portfolio = () => {
               </div>
 
               <div className="portfolio__item-cta">
-                <a href={github} className="btn">
+                <a href={github} className="btn" target="blank">
                   Github
                 </a>
                 <a href={demo} className="btn btn-primary" target="blank">
-                  {" "}
-                  Live Demo{" "}
+                  
+                  Live Demo
                 </a>
               </div>
             </article>
