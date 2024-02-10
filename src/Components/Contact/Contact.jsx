@@ -6,27 +6,26 @@ import { ImWhatsapp } from "react-icons/im";
 
 // import emailjs from "emailjs-com";
 
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_7enzl8f', 'template_93u4tgl', form.current, {
-        publicKey: '-GpiH5-T0DHz5qoRi',
-      }) 
+      .sendForm("service_7enzl8f", "template_93u4tgl", form.current, {
+        publicKey: "-GpiH5-T0DHz5qoRi"
+      })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
           form.current.reset();
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log("FAILED...", error.text);
+        }
       );
   };
 
@@ -42,7 +41,6 @@ const Contact = () => {
             <h4> Email </h4>
             <h5> akashvicky2012@gmail.com</h5>
             <a href="https://gmail.com" target="blank">
-              
               Send a Mail
             </a>
           </article>
@@ -51,7 +49,6 @@ const Contact = () => {
             <h4> Whatsapp </h4>
             <h5> +91 9150253488 </h5>
             <a href="https://wa.me/+919150253488" target="blank">
-              
               Whatsapp Me
             </a>
           </article>
@@ -60,13 +57,12 @@ const Contact = () => {
             <h4> Linkedin </h4>
             <h5> Akash S M </h5>
             <a href="https://www.linkedin.com/in/akash-s-m/" target="blank">
-              
               Connect With Linkedin
             </a>
           </article>
         </div>
 
-        <form ref={form}  onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
@@ -81,7 +77,6 @@ const Contact = () => {
           />
           <textarea name="message" rows="7" placeholder="your Message" />
           <button type="submit" className="btn btn-primary">
-            
             Send a Message
           </button>
         </form>

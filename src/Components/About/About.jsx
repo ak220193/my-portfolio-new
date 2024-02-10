@@ -1,20 +1,20 @@
 import React from "react";
 import "./About.css";
-import Image2 from "../../Assets/side-main.png"
+import Image2 from "../../Assets/side-main.png";
 import { FaAward } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
 import { GoProjectSymlink } from "react-icons/go";
 
 const About = () => {
   return (
-    <section id="About" >
+    <section id="About">
       <h5> Get To Know </h5>
       <h2> About Me </h2>
 
-      <div className="container about__container" >
+      <div className="container about__container">
         <div className="about__me">
-          <div className="about__me image" >
-            <img src={Image2} alt="image2" height={400}   />
+          <div className="about__me image">
+            <img src={Image2} alt="image2" height={400} />
           </div>
         </div>
         <div className="about__content">
@@ -42,7 +42,10 @@ const About = () => {
             eius autem!
           </p>
 
-          <a href="#contact" className="btn btn-primary" > Let's Connect </a>
+          <a href="#contact" className="btn btn-primary">
+            {" "}
+            Let's Connect{" "}
+          </a>
         </div>
       </div>
     </section>

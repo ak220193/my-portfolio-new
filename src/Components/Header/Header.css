@@ -33,7 +33,7 @@ header {
   content: "";
   width: 1px;
   height: 3rem;
-   background: var(--color-primary);
+  background: var(--color-primary);
 }
 
 .me {
@@ -45,7 +45,6 @@ header {
   border-radius: 12rem 12rem 0px 0px;
   overflow: hidden;
   position: relative;
-
 }
 
 .scroll__down {
