@@ -44,6 +44,7 @@ form {
     display: flex;
     flex-direction: column;
     gap:1.2rem;
+    margin-top: 5rem;
 }
 
 input, textarea {
@@ -56,5 +57,23 @@ input, textarea {
     color: var(--color-white);
 }
 
+
+@media screen and (max-width:1024px) {
+
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+
+    .container.contact__container{
+        width: var(--container-width-sm);
+       
+    }
+    
+}
 
  
