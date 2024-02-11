@@ -77,18 +77,37 @@
     gap: 0;
   }
   .about__me {
-    width: 50%;
+    width: 60%;
     margin: 2rem auto 4rem;
   }
+  .about__me img{
+    width: 20rem;
+    margin-left: -2.3rem;
+    margin-top: 1.5rem;
+    /* object-fit: contain; */
+    /* overflow: hidden; */
+  }
+
+ 
   .about__content p {
     margin: 1rem 0 1.5rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+
+
   .about__me {
-    width: 65%;
+  width: 60%;
+  margin: 0 auto 2rem;
   }
+
+  .about__me img {
+    width: 9.5rem;
+    margin-top: 2rem;
+    margin-left: -1.2rem;
+  }
+
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
