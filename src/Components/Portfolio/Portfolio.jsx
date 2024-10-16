@@ -4,9 +4,10 @@ import Qtrip from "../../Assets/Qtrip-static.png";
 import Xboard from "../../Assets/Xboard.png";
 import Qkart from "../../Assets/Qkart.png";
 import Qtify from "../../Assets/qtify.png";
-import Bistro from "../../Assets/spic.jpeg";
-import Movie from "../../Assets/Tmdb.png";
-import Lawfrimland from "../../Assets/Lawfrim.png";
+import Bistro from "../../Assets/food .jpg";
+import Tattoo from "../../Assets/tattoo.avif"
+import Lawfrimland from "../../Assets/law.jpg";
+
 
 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>;
 
@@ -16,7 +17,7 @@ const data = [
   {
     id: 1,
     image: Qtrip,
-    title: "Qtrip Travel Website- static version",
+    title: "Qtrip Travel Website",
     github: "https://github.com/ak220193",
     demo: "https://qtriptest1.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
@@ -25,7 +26,7 @@ const data = [
   {
     id: 2,
     image: Qtrip,
-    title: " Qtrip Travel Website - dynamic version",
+    title: " Qtrip -- dynamic version",
     github: "https://github.com/ak220193",
     demo: "https://qtrip-dyamic-frontend1.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
@@ -61,7 +62,7 @@ const data = [
   {
     id: 6,
     image: Bistro,
-    title: "Spice-Bistro : Food delivery",
+    title: "Spicy-Bistro",
     github: "https://github.com/ak220193",
     demo: "https://spice-bistro-ak-react-project.netlify.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
@@ -69,10 +70,10 @@ const data = [
 
   {
     id: 7,
-    image: Movie,
-    title: "Movie Review-app",
+    image: Tattoo,
+    title: "Mirror Tattoos",
     github: "https://github.com/ak220193",
-    demo: "https://sample-movie-watch.netlify.app/",
+    demo: "https://mirror-final.vercel.app/",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
   },
   {
@@ -82,7 +83,8 @@ const data = [
     github: "https://github.com/ak220193",
     demo: "https://lawfirm-landingpage.vercel.app",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit"
-  }
+  },
+  
 ];
 
 const Portfolio = () => {
@@ -108,7 +110,6 @@ const Portfolio = () => {
                   Github
                 </a>
                 <a href={demo} className="btn btn-primary" target="blank">
-                  
                   Live Demo
                 </a>
               </div>

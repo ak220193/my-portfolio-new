@@ -1,32 +1,19 @@
+/* Base styles for larger screens (Desktop) */
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
 }
 
-.about__me {
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary),
-    transparent
-  );
-  display: grid;
-  place-items: center;
-}
-
 .about__me img {
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  transform: rotate(0deg);
   transition: var(--transition);
 }
 
 .about__me img:hover {
-  transform: rotate(0deg);
+  transform: rotate(-5deg);
 }
 
 .about__cards {
@@ -70,55 +57,165 @@
   color: var(--color-light);
 }
 
-/* @media screen and (max-width:1024px) {
-  .about__container{
-    grid-template-columns: 1fr;
-    gap:0;
-  }
-  .about__me{
-    width: 50%;
-    margin: 2rem auto 4rem;
-  }
-  .about__content p {
-    margin: 1rem 0 1.5rem;
-  }
-}
+/* .btn btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
-@media screen and (max-width:768px) {
-  .about__container{
-    grid-template-columns: 1fr 1fr;
-  }
-  .about__me {
-    width: 40%;
-  }
-  .about__me img{
-    width: 120%;
-    margin-top: 1rem;
-  }
-}
+/* ---- Media Queries ---- */
 
-@media screen and (max-width:600px) {
-  .about__container{
-    width: 80%;
-    margin: 0 auto;
+/* Mobile (Phone) */
+@media screen and (max-width: 600px) {
+  .about__container {
+    grid-template-columns: 1fr; /* Stacks the columns in a single row */
+    gap: 5%; /* Reduce the gap */
   }
-  .about__me{
-    width: 60%;
+
+  .about__me img {
+    width: 100%;
+    border-radius: 1rem; /* Slightly smaller border radius on mobile */
   }
-  .about__me img{
-    width: 150%;
-    margin-top: 20px;
-    padding: 0.2rem;
-  }
+
   .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap:1rem;
+    grid-template-columns: 1fr; /* Stack the cards vertically on small screens */
+    gap: 1rem;
   }
-.about__content{
-  text-align: center;
+
+  .about__card {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .about__icon {
+    font-size: 1.2rem; /* Slightly smaller icon */
+  }
+
+  .about__card h5 {
+    font-size: 0.85rem; /* Smaller text for mobile */
+  }
+
+  .about__card small {
+    font-size: 0.6rem;
+  }
+
+  .about__content p {
+    margin: 1rem 0; /* Adjust margins to fit better on small screens */
+  }
 }
-.about__content p{
-  margin: 1.5rem 0 ;
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr 1fr; /* Two-column layout on tablets */
+    gap: 10%;
+  }
+
+  .about__me img {
+    width: 90%; /* Adjust image width */
+    border-radius: 1.5rem;
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  }
+
+  .about__card {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .about__icon {
+    font-size: 1.3rem;
+  }
+
+  .about__card h5 {
+    font-size: 0.9rem;
+  }
+
+  .about__card small {
+    font-size: 0.65rem;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
 }
-  
-}  */
+
+/* Desktop */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .about__container {
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+  }
+
+  .about__me img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout for desktop */
+    gap: 1.5rem;
+  }
+
+  .about__card {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .about__icon {
+    font-size: 1.4rem;
+  }
+
+  .about__card h5 {
+    font-size: 0.95rem;
+  }
+
+  .about__card small {
+    font-size: 0.7rem;
+  }
+
+  .about__content p {
+    margin: 2rem 0 2.6rem;
+  }
+}
+
+/* Larger Screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+  .about__container {
+    grid-template-columns: 35% 50%; /* Keep the same layout */
+    gap: 15%;
+  }
+
+  .about__me img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* Increase the gap for larger screens */
+  }
+
+  .about__card {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .about__icon {
+    font-size: 1.5rem;
+  }
+
+  .about__card h5 {
+    font-size: 1rem; /* Slightly larger text for larger screens */
+  }
+
+  .about__card small {
+    font-size: 0.75rem;
+  }
+
+  .about__content p {
+    margin: 3rem 0 3.5rem;
+  }
+}

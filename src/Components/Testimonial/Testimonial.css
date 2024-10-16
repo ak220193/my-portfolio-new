@@ -1,5 +1,5 @@
-.container.testomonials__container {
-  width: 40%;
+.container.testimonials__container {
+  width: 50%;
   padding-bottom: 4rem;
 }
 
@@ -28,7 +28,7 @@
   margin: 0.8rem auto 0;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .container.testimonial__container {
     width: var(--container-width-md)
   }
@@ -41,5 +41,92 @@
 
   .client-review {
     width: var(--container-width-md);
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .container.testimonials__container {
+    width: 70%; /* Adjust width to fit the mobile screen */
+    padding-bottom: 5rem; /* Reduce bottom padding for mobile */
+  }
+
+  .client__avatar {
+    width: 3rem; /* Smaller avatar size for mobile */
+    border-width: 0.3rem; /* Slightly thinner border for mobile */
+  }
+
+  .testimonial {
+    padding: 1rem; /* Smaller padding for mobile */
+    border-radius: 1rem; /* Reduced border-radius for mobile */
+  }
+
+  .client-review {
+    width: 90%; /* Ensure text takes up more width on small screens */
+  }
+}
+
+/* Tablet - 601px to 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container.testimonials__container {
+    width: 50%; /* More space for tablets */
+    padding-bottom: 3rem; /* Adjust padding for tablet */
+  }
+
+  .client__avatar {
+    width: 3.5rem; /* Adjust avatar size for tablets */
+    border-width: 0.35rem; /* Adjust border width for tablets */
+  }
+
+  .testimonial {
+    padding: 1.5rem; /* Adjust padding for tablets */
+    border-radius: 1.5rem; /* Slightly larger border-radius for tablets */
+  }
+
+  .client-review {
+    width: 85%; /* Adjust width of text block on tablets */
+  }
+}
+
+/* Desktop - 1025px to 1440px */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .container.testimonials__container {
+    width: 70%; /* Keep the original width for desktops */
+    padding-bottom: 4rem;
+  }
+
+  .client__avatar {
+    width: 4rem; /* Regular size for avatar */
+    border-width: 0.4rem; /* Regular border width */
+  }
+
+  .testimonial {
+    padding: 2rem; /* Keep padding as is for desktops */
+    border-radius: 2rem; /* Regular border-radius */
+  }
+
+  .client-review {
+    width: 80%; /* Regular width for client review */
+  }
+}
+
+/* Larger Screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+  .container.testimonials__container {
+    width: 35%; /* Slightly narrower container for larger screens */
+    padding-bottom: 4rem;
+  }
+
+  .client__avatar {
+    width: 4.5rem; /* Slightly larger avatar for larger screens */
+    border-width: 0.4rem; /* Keep the same border width */
+  }
+
+  .testimonial {
+    padding: 2.5rem; /* Increase padding for larger screens */
+    border-radius: 2.5rem; /* Larger border-radius */
+  }
+
+  .client-review {
+    width: 85%; /* Slightly wider review text block for larger screens */
   }
 }

@@ -56,13 +56,6 @@ const Navbar = () => {
       >
         <RiContactsBookLine />
       </a>
-      <a
-        href="Mode"
-        onClick={() => setActiveNav("#Mode")}
-        className={activeNav === "About" ? "active" : ""}
-      >
-        <IoMoonOutline />
-      </a>
     </nav>
   );
 };

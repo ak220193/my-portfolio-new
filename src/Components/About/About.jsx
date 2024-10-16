@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Image2 from "../../Assets/side-main.png";
+import Image2 from "../../Assets/mypic.png";
 import { FaAward } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
 import { GoProjectSymlink } from "react-icons/go";
@@ -32,18 +32,17 @@ const About = () => {
             <article className="about__card">
               <GoProjectSymlink className="about__icon" />
               <h5> Projects </h5>
-              <small> 10+ projects </small>
+              <small> 20+ projects </small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            facere voluptates saepe facilis dolores fugiat dolorum odio sint
-            eius autem!
+          I’m Akash, a passionate MERN Stack Developer with 1+ years of experience building cutting-edge web applications. From crafting dynamic user interfaces with React.js to developing robust backends with Node.js and MongoDB, I love bringing ideas to life using the latest technologies.
+
+          Having worked with over 100+ clients and delivered 20+ projects, I’m driven by creating clean, scalable code and solutions that make an impact.
           </p>
 
           <a href="#contact" className="btn btn-primary">
-         
             Let's Connect
           </a>
         </div>

@@ -49,31 +49,31 @@ const Experience = () => {
               <IoShieldCheckmark className="experience__detail-icon" />
               <div>
                 <h4> React JS </h4>
-                <small className="text-light"> intermediate </small>
+                <small className="text-light"> Experienced  </small>
               </div>
             </article>
 
             <article className="experience__details">
               <IoShieldCheckmark className="experience__detail-icon" />
               <div>
-                <h4> Material UI </h4>
+                <h4> NEXT JS </h4>
+                <small className="text-light"> Entry level Beginner </small>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <IoShieldCheckmark className="experience__detail-icon" />
+              <div>
+                <h4> Tailwind CSS </h4>
+                <small className="text-light"> Experienced </small>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <IoShieldCheckmark className="experience__detail-icon" />
+              <div>
+                <h4>React-Redux</h4>
                 <small className="text-light"> Intermediate </small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <IoShieldCheckmark className="experience__detail-icon" />
-              <div>
-                <h4> Tailwind </h4>
-                <small className="text-light"> Entry level Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <IoShieldCheckmark className="experience__detail-icon" />
-              <div>
-                <h4> Swiper JS </h4>
-                <small className="text-light"> Entry level Beginner</small>
               </div>
             </article>
           </div>
@@ -86,7 +86,7 @@ const Experience = () => {
               <IoShieldCheckmark className="experience__detail-icon" />
               <div>
                 <h4> Node JS </h4>
-                <small className="text-light"> Entry level Beginner</small>
+                <small className="text-light"> Experienced</small>
               </div>
             </article>
 
@@ -94,7 +94,7 @@ const Experience = () => {
               <IoShieldCheckmark className="experience__detail-icon" />
               <div>
                 <h4> Express JS </h4>
-                <small className="text-light"> Entry level Beginner</small>
+                <small className="text-light"> Experienced </small>
               </div>
             </article>
 
@@ -102,9 +102,44 @@ const Experience = () => {
               <IoShieldCheckmark className="experience__detail-icon" />
               <div>
                 <h4> MongoDB </h4>
-                <small className="text-light"> Entry level Beginner</small>
+                <small className="text-light"> Experienced </small>
               </div>
             </article>
+            <article className="experience__details">
+            <IoShieldCheckmark className="experience__detail-icon" />
+            <div>
+              <h4> Niginx </h4>
+              <small className="text-light"> Entry level Beginner </small>
+            </div>
+          </article>
+          <article className="experience__details">
+            <IoShieldCheckmark className="experience__detail-icon" />
+            <div>
+              <h4> FireBase </h4>
+              <small className="text-light"> Entry level Beginner </small>
+            </div>
+          </article>
+          <article className="experience__details">
+            <IoShieldCheckmark className="experience__detail-icon" />
+            <div>
+              <h4> AWS EC-2 </h4>
+              <small className="text-light"> Entry level Beginner </small>
+            </div>
+          </article>
+          <article className="experience__details">
+            <IoShieldCheckmark className="experience__detail-icon" />
+            <div>
+              <h4>CI/CD  </h4>
+              <small className="text-light"> Entry level Beginner </small>
+            </div>
+          </article>
+          <article className="experience__details">
+            <IoShieldCheckmark className="experience__detail-icon" />
+            <div>
+              <h4> System Design (HLD & LLD) </h4>
+              <small className="text-light"> Entry level Beginner </small>
+            </div>
+          </article>
           </div>
         </div>
       </div>

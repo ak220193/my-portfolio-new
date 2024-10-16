@@ -54,7 +54,7 @@ footer a {
     color: var(--color-bg);
 }
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
     Footer{
         margin-bottom: 10rem;
         width: 80%;
@@ -69,5 +69,124 @@ footer a {
     }
     .footer__socials{
         margin-bottom: 2.6rem;
+    }
+} */
+
+/* ---- Media Queries ---- */
+
+/* Mobile (Phone) - max-width: 600px */
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+        margin-top: 5rem;
+        margin-bottom: 6rem; /* Reduce the bottom margin */
+    }
+
+    .footer__logo {
+        font-size: 1.5rem; /* Reduce logo size on mobile */
+    }
+
+    .permalinks {
+        flex-direction: column; /* Stack links vertically on mobile */
+        gap: 1.5rem; /* Reduce the gap between links */
+    }
+
+    .footer__socials {
+        margin-bottom: 2.6rem;
+        gap: 0.8rem; /* Slightly smaller gap between social icons */
+    }
+
+    .footer__socials a {
+        padding: 0.7rem; /* Adjust padding for smaller screens */
+    }
+
+    .footer__copyright {
+        margin-bottom: 2rem; /* Adjust bottom margin for small screens */
+    }
+}
+
+/* Tablet - 601px to 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    footer {
+        padding: 3rem 2rem; /* Adjust padding for tablets */
+        margin-top: 6rem;
+        margin-bottom: 8rem;
+    }
+
+    .footer__logo {
+        font-size: 1.8rem; /* Slightly smaller logo for tablets */
+    }
+
+    .permalinks {
+        flex-direction: row; /* Keep links in a row on tablets */
+        gap: 1.8rem; /* Adjust gap for tablets */
+    }
+
+    .footer__socials {
+        gap: 1rem;
+        margin-bottom: 3rem; /* Adjust margin-bottom */
+    }
+
+    .footer__socials a {
+        padding: 0.8rem; /* Slightly smaller padding for tablets */
+    }
+}
+
+/* Desktop - 1025px to 1440px */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    footer {
+        padding: 3rem 4rem; /* Slightly larger padding for desktop */
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+    }
+
+    .footer__logo {
+        font-size: 2rem; /* Keep the original size for desktop */
+    }
+
+    .permalinks {
+        gap: 2rem; /* Keep the gap the same as in the base desktop version */
+    }
+
+    .footer__socials {
+        gap: 1rem;
+        margin-bottom: 4rem; /* Standard margin for desktop */
+    }
+
+    .footer__socials a {
+        padding: 0.9rem; /* Regular padding for desktop */
+    }
+
+    .footer__copyright {
+        margin-bottom: 4rem;
+    }
+}
+
+/* Larger Screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+    footer {
+        padding: 4rem 6rem; /* Increase padding for larger screens */
+        margin-top: 8rem;
+        margin-bottom: 12rem; /* Increase bottom margin for spacious layout */
+    }
+
+    .footer__logo {
+        font-size: 2.5rem; /* Increase logo size for larger screens */
+    }
+
+    .permalinks {
+        gap: 2.5rem; /* Increase gap between links */
+    }
+
+    .footer__socials {
+        gap: 1.2rem; /* Slightly wider gap for larger screens */
+    }
+
+    .footer__socials a {
+        padding: 1rem; /* Increase padding for social icons */
+    }
+
+    .footer__copyright {
+        margin-bottom: 6rem; /* Increased margin for spacious layout */
     }
 }

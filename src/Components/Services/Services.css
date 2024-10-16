@@ -15,7 +15,7 @@
 .service__list-icon {
   color: var(--color-primary);
   margin-top: 2px;
-  width: 20%;
+  width: 10%;
 }
 
 .service:hover {
@@ -43,12 +43,12 @@
 
 .service__list li {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 0.9rem;
 }
 
 .service__list p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
